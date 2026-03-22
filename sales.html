@@ -9,10 +9,10 @@
 <title>POS Sales</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -49,19 +49,12 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.c
 
 <div class="col-md-6">
 
-<button class="btn btn-outline-primary me-3"
-onclick="addToCart('Keyboard',1200)">
-<i class="bi bi-keyboard"></i> Keyboard - Rs 1200
-</button>
+<div id="productButtons" class="d-flex flex-wrap gap-2"></div>
 
-<button class="btn btn-outline-primary"
-onclick="addToCart('Mouse',500)">
-<i class="bi bi-mouse"></i> Mouse - Rs 500
-</button>
-
-<button onclick="checkout()" class="btn btn-success">
+<button onclick="checkout()" class="btn btn-success mt-3">
 Checkout & Print Bill
 </button>
+
 </div>
 
 
@@ -86,8 +79,10 @@ Checkout
 </div>
 
 <script src="script.js"></script>
+
 <footer class="bg-dark text-white text-center py-3 mt-5">
 © 2026 POS System
 </footer>
+
 </body>
 </html>
