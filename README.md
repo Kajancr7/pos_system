@@ -3,7 +3,7 @@
 A responsive **Point of Sale (POS) web application** built using HTML, CSS, JavaScript, PHP, and MySQL.
 This system allows product management, sales tracking, and a dynamic dashboard with real-time data.
 
-can access through here  https://github.com/Kajancr7/pos_system.git   (only front end here)
+can access through here  https://kajancr7.github.io/pos_system/  (only front end here)
 ---
 
 ## 🚀 Features
