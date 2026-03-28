@@ -1,0 +1,98 @@
+<?php
+include "backend/check_login.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>POS Sales</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand">POS SYSTEM</a>
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.php">Dashboard</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="products.php">Products</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="sales.php">Sales</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-danger" href="backend/logout.php">
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+</nav>
+
+
+<div class="container mt-5">
+
+<h2>Sales System</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div id="productButtons" class="d-flex flex-wrap gap-2"></div>
+
+<button onclick="checkout()" class="btn btn-success mt-3">
+Checkout & Print Bill
+</button>
+
+</div>
+
+
+<div class="col-md-6">
+
+<h4>Shopping Cart</h4>
+
+<ul id="cartList" class="list-group"></ul>
+
+<h4 class="mt-3">
+Total : <span id="totalPrice">Rs 0</span>
+</h4>
+
+<button onclick="checkout()" class="btn btn-success">
+Checkout
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+© 2026 POS System
+</footer>
+
+</body>
+</html>

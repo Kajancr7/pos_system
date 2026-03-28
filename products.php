@@ -1,0 +1,102 @@
+<?php
+include "backend/check_login.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>POS Products</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand">POS SYSTEM</a>
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.php">Dashboard</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="products.php">Products</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="sales.php">Sales</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-danger" href="backend/logout.php">
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+</nav>
+
+
+<div class="container mt-5">
+
+<h2>Product Management</h2>
+
+<div class="card p-4">
+
+<input id="productName" class="form-control mb-3" placeholder="Product Name">
+
+<input id="productPrice" type="number" class="form-control mb-3" placeholder="Product Price">
+
+<input id="productQty" type="number" class="form-control mb-3" placeholder="Quantity">
+
+<button onclick="addProduct()" class="btn btn-primary">
+Add Product
+</button>
+
+</div>
+
+</div>
+
+
+<div class="container mt-5">
+
+<h3>Product List</h3>
+
+<h5 class="text-muted mb-3">
+Total Products: <span id="productCount">0</span>
+</h5>
+
+<input type="text"
+id="searchProduct"
+class="form-control mb-3"
+placeholder="Search product..."
+onkeyup="searchProduct()">
+
+<div id="productList" class="row"></div>
+
+<p id="noProductMsg" class="text-danger text-center mt-3" style="display:none;">
+No products found
+</p>
+
+</div>
+
+<script src="script.js"></script>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+© 2026 POS System
+</footer>
+
+</body>
+</html>

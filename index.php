@@ -1,0 +1,130 @@
+<?php
+include "backend/check_login.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>POS Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand">POS SYSTEM</a>
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.php">
+<i class="bi bi-speedometer2"></i> Dashboard
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="products.php">
+<i class="bi bi-box-seam"></i> Products
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="sales.php">
+<i class="bi bi-cart"></i> Sales
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link text-danger" href="backend/logout.php">
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+</nav>
+
+
+<div class="container mt-5">
+
+<h2>Dashboard Overview</h2>
+
+<div class="row mt-4">
+
+<div class="col-md-4">
+<div class="card text-center p-3">
+<i class="bi bi-box-seam text-warning fs-1"></i>
+<h5 class="mt-2">Total Products</h5>
+<h3 id="totalProducts">0</h3>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card text-center p-3">
+<i class="bi bi-bag-check text-primary fs-1"></i>
+<h5 class="mt-2">Total Orders</h5>
+<h3 id="totalOrders">0</h3>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card text-center p-3">
+<i class="bi bi-cash-stack text-success fs-1"></i>
+<h5 class="mt-2">Total Sales</h5>
+<h3 id="totalSales">Rs 0</h3>
+</div>
+</div>
+
+</div>
+
+<h3 class="mt-5">Store Highlights</h3>
+
+<div id="slider" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="images/1684773805107.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="images/how_to_buy_apple_products.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="images/refurb-landing-og-202408.jpg" class="d-block w-100">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+© 2026 POS System
+</footer>
+
+</body>
+</html>
